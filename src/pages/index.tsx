@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head'
 import Image from "next/image";
-import styles from "@/styles/home.module.css";
+import styles from "../styles/homePage.module.css";
 import brainstormImg from "../assets/brainstorm.png";
 import {collection, getDocs} from "firebase/firestore";
 import {db} from "../services/firebaseConnection";
