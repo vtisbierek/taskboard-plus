@@ -172,7 +172,7 @@ export default function Dashboard({user}: DashboardProps){ //eu preciso indicar 
 
 export const getServerSideProps: GetServerSideProps = async ({req}) => { //essa função getServerSideProps sempre é executada no lado do servidor, e não no client, tanto é que o console.log aí abaixo vai aparecer no terminal, e não no console do navegador
     const session = await getSession({req});
-    //console.log(session);
+    console.log(session);
 
     if(!session?.user){ //ou seja, se não tem nenhum usuário em sessão, redireciona pra home
         return ({
